@@ -1,5 +1,6 @@
 import React from 'react'
 import { View, Text, StyleSheet, TextInput, Image, TouchableOpacity } from 'react-native';
+import Maik from '../../assets/maik.png';
 
 export default function Register({ navigation }) {
     function goToLogin() {
@@ -10,7 +11,7 @@ export default function Register({ navigation }) {
         <Text style={style.titulo}></Text>
         <View style={style.form}>
             <View style={style.screen}>
-                <Image style={style.imagem} source={require('../../assets/maik.png')} />
+                <Image style={style.imagem} source={{uri:'https://avatars.githubusercontent.com/u/81448507?v=4'}} />
             </View>
 
             {/* Label -> Aonde adiciona a label NOME */}
@@ -169,7 +170,7 @@ const style = StyleSheet.create({
 
     },
     imagem: {
-        borderRadius: 1010,
+        borderRadius: 100,
         width: 200,
         height: 200,
         
