@@ -58,7 +58,6 @@ export default function Register({ navigation }) {
             {/* Label -> Aonde adiciona a label CARGO */}
             <Text style={style.label}></Text>
             <TextInput style={style.cargo}
-                secureTextEntry={true}
                 placeholder="Cargo"
                 placeholderTextColor="#999"
                 autoCapitalize='none'
