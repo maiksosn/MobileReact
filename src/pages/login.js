@@ -5,11 +5,13 @@ export default function Login({navigation}){
     function goToRegister(){
         navigation.navigate('Register')
     }
+    // CHAMADA PARA ADICINAR A IMAGEM 
     return (<View style={style.container}>
         <Image source={require('../../assets/logo.png')} />
         <View style={style.form}>
         <Text style={style.label}>Login</Text>
 
+        {/* Label -> Aonde adiciona a label E-MAIL */}
         <TextInput style={style.email}
         keyboardType="email-address"
         placeholder="Digite seu e E-mail..."
@@ -18,6 +20,7 @@ export default function Login({navigation}){
         autoCorrect={false}
         ></TextInput>
 
+        {/* Label -> Aonde adiciona a label SENHA */}
         <Text style={style.label}>Senha</Text>
         <TextInput style={style.senha}
         secureTextEntry = {true}
@@ -28,9 +31,11 @@ export default function Login({navigation}){
         autoCorrect={false}
         ></TextInput>
 
+        {/* Botão -> Aonde vai criar o botão ENTRAR */}
         <TouchableOpacity style={style.button}><Text style={style.textButton}>Entrar</Text></TouchableOpacity>
+        
         <View>
-
+            {/* Aonde fará a chamada para a tela de cadastrar usúario */}
             <TouchableOpacity onPress={goToRegister}>
                 <Text style={style.cadastre}>Faça seu cadastro !</Text>
             </TouchableOpacity>

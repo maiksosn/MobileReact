@@ -12,6 +12,7 @@ export default function Register({ navigation }) {
             <View style={style.screen}>
                 <Image style={style.imagem} source={require('../../assets/maik.png')} />
             </View>
+
             {/* Label -> Aonde adiciona a label NOME */}
             <Text style={style.label}></Text>
             <TextInput style={style.nome}
@@ -21,6 +22,7 @@ export default function Register({ navigation }) {
                 autoCapitalize='none'
                 autoCorrect={false}
             ></TextInput>
+
             {/* Label -> Aonde adiciona a label E-MAIL */}
             <Text style={style.label}></Text>
             <TextInput style={style.email}
@@ -29,6 +31,7 @@ export default function Register({ navigation }) {
                 autoCapitalize='none'
                 autoCorrect={false}
             ></TextInput>
+
             {/* Label -> Aonde adiciona a label CPF */}
             <View style={style.row}>
                 <Text style={style.label}></Text>
@@ -39,6 +42,7 @@ export default function Register({ navigation }) {
                     autoCapitalize='none'
                     autoCorrect={false}
                 ></TextInput>
+
             {/* Label -> Aonde adiciona a label RG */}
                 <Text style={style.label}></Text>
                 <TextInput style={style.rg}
@@ -49,6 +53,7 @@ export default function Register({ navigation }) {
                     autoCorrect={false}
                 ></TextInput>
             </View>
+
             {/* Label -> Aonde adiciona a label CARGO */}
             <Text style={style.label}></Text>
             <TextInput style={style.cargo}
@@ -58,8 +63,10 @@ export default function Register({ navigation }) {
                 autoCapitalize='none'
                 autoCorrect={false}
             ></TextInput>
+
             {/* Botão -> Aonde adiciona a botão CADASTRAR */}
             <TouchableOpacity style={style.button}><Text style={style.textButton}>Cadastrar</Text></TouchableOpacity>
+            
             <View>
                 {/* Aonde fará o retorno para a tela de LOGIN novamente */}
                 <TouchableOpacity onPress={goToLogin}>
